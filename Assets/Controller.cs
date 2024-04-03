@@ -15,7 +15,6 @@ public class Controller : MonoBehaviour
 
     private float topScore = 0.0f;
     public TMP_Text scoreText;
-    // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -49,8 +48,6 @@ public class Controller : MonoBehaviour
     {
         if(collision.name == "Gameover"){
             LevelManager.manager.GameOver();
-            Debug.Log("Player collided with" + collision.name);
         }
-    
     }
 }

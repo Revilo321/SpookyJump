@@ -10,8 +10,6 @@ public class LevelManager : MonoBehaviour
 
     public GameObject deathScreen;
 
-    // Start is called before the first frame update
-
     private void Awake(){
         manager = this;
     }
